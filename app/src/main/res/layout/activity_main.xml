@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/locksc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/swipebt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="500dp"
+            app:button_background="@drawable/shape_button"
+            app:button_bottom_padding="28dp"
+            app:button_image_disabled="@drawable/lock"
+            app:button_image_enabled="@drawable/unlock"
+            app:button_left_padding="28dp"
+            app:button_right_padding="28dp"
+            app:button_top_padding="20dp"
+            app:inner_text="@string/left"
+            app:inner_text_background="@drawable/shape_background"
+            app:inner_text_bottom_padding="16dp"
+            app:inner_text_color="#000"
+            app:inner_text_size="18sp"
+            app:inner_text_top_padding="16dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
